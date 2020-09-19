@@ -39,7 +39,7 @@ finalTransformedCoordinate = [[0 for i in range(len(transposedCoordinate[0]))] f
 for i in range(len(transformationVector)):
     for j in range(len(transposedCoordinate[0])):
         for k in range(len(transposedCoordinate)):
-            finalTransformedCoordinate[i][j] += transformationVector[i][k] * transposedCoordinate[k][j]
+            finalTransformedCoordinate[i][j] += int(transformationVector[i][k] * transposedCoordinate[k][j])
 
 transposedFinalCoordinate = [[0 for i in range(len(finalTransformedCoordinate))] for j in
                              range(len(finalTransformedCoordinate[0]))]
