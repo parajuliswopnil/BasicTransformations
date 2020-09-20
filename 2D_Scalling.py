@@ -62,7 +62,7 @@ print(transposedFinalCoordinate)
 
 drawingSurface = pygame.display.set_mode((900, 900))
 drawingSurface.fill(colorWhite)
-pygame.display.set_caption("2D Translation")
+pygame.display.set_caption("2D Scaling")
 pygame.draw.polygon(drawingSurface, colorGreen, transposedFinalCoordinate)
 pygame.draw.polygon(drawingSurface, colorRed, originalFigure)
 
